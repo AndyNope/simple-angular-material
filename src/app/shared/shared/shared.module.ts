@@ -5,6 +5,7 @@ import { MatTableModule } from '@angular/material/table';
 import { ClientsService } from '../services/clients.service';
 import { AuthService } from '../services/auth.service';
 import { SharedService } from '../services/shared.service';
+import { AuthGuardService } from '../guards/auth-guard.service';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -28,7 +29,8 @@ export const MATERIAL_COMPONENTS = [
   providers: [
     ClientsService,
     SharedService,
-    AuthService
+    AuthService,
+    AuthGuardService
   ]
 })
 export class SharedModule { }
