@@ -52,6 +52,15 @@ export class AuthService {
   }
 
   /**
+   * Check if logged in
+   * @returns (boolean)
+   */
+  isLoggedIn(): any {
+    // TODO
+    return false;
+  }
+
+  /**
    * Clear the session
    */
   clearSession(): void {
