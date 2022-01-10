@@ -19,11 +19,11 @@ export class LoginComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {    
-    this.authService.login('KreativMedia', 'b3E!13hy').subscribe(
-      response => {
-        console.log(response);
-      }
-    );
+    // this.authService.login('KreativMedia', 'b3E!13hy').subscribe(
+    //   response => {
+    //     console.log(response);
+    //   }
+    // );
   }
 
 
@@ -31,6 +31,13 @@ export class LoginComponent implements OnInit {
     console.log(
       this.reactiveForm.value.username, 
       this.reactiveForm.value.password, 
+    );
+    const username:string = this.reactiveForm.value.username;
+    const password:string = this.reactiveForm.value.password;
+    this.authService.login(username, password).subscribe(
+      response => {
+        console.log(response);
+      }
     );
   }
 }
