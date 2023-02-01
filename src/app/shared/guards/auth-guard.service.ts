@@ -15,7 +15,7 @@ export class AuthGuardService implements CanActivate {
         return this.authService.isLoggedIn().pipe(
             tap(loggedIn => {
                 if (!loggedIn) {
-                   
+                   // ToDo Redirection
                 }
             })
         );
