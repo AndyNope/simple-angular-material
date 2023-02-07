@@ -1,0 +1,7 @@
+details[open] summary span.icon {
+    transform: rotate(180deg);
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
